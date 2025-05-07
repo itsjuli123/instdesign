@@ -3759,8 +3759,8 @@ ul.list-reset {
   margin-bottom: 30px;
 }
 .intro-hidden {
-  opacity: 0;
   visibility: hidden;
+  opacity: 0;           /* optional, improves initial hide */
 }
 @media (max-width: 575px) {
   .section-projects .section-inner {
