@@ -54,7 +54,7 @@ body {
   color: #666;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  background-image: url("../images/blog-post-01.jpg"); /* Corrected syntax */
+  background-image: url("../images/hexagon-pattern.png"); /* Corrected syntax */
   background-repeat: repeat; /* Tiles the image */
   background-size: auto;     /* Keeps the original size for tiling */
   background-position: top left;
