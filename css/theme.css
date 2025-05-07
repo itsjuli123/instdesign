@@ -46,7 +46,7 @@ Notes:	decreasing heading by 0.4em with every subsequent heading level
 /*-----------------------------------------------------*/
 /* #Helper class */
 /* Typography */
-body {
+bbody {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -55,8 +55,12 @@ body {
   line-height: calc(30 / 18);
   color: #666;
   -webkit-font-smoothing: antialiased;
-  /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
+  background-image: url('your-image-path.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
 h1,
@@ -3747,7 +3751,9 @@ ul.list-reset {
 .section-projects .section-inner {
   padding: 0 35px;
 }
-
+.section-projects .bg-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
 .section-projects .card-project {
   margin-bottom: 30px;
 }
