@@ -3506,7 +3506,7 @@ ul.list-reset {
 }
 
 .section-heading-light {
-  color: #333333;
+  color: #fff;
 }
 
 /*Section introduct*/
@@ -3748,6 +3748,9 @@ ul.list-reset {
 */
 .section-projects .section-inner {
   padding: 0 35px;
+}
+.section-heading-light {
+  color: #fff;
 }
 .section-projects .bg-overlay {
   background: rgba(0, 0, 0, 0.8);
