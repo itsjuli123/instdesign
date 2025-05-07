@@ -56,11 +56,11 @@ bbody {
   color: #666;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  background-image: url('images/linebg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
+  background-image: url('images/hexagon-pattern.png'); /* Update the path if needed */
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: top left;
+    background-attachment: fixed; /* Optional: keeps it fixed on scroll */
 }
 
 h1,
