@@ -3758,7 +3758,9 @@ ul.list-reset {
 .section-projects .card-project {
   margin-bottom: 30px;
 }
-
+.into-hidden {
+  display: none !important;
+}
 @media (max-width: 575px) {
   .section-projects .section-inner {
     padding: 0;
