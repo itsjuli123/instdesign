@@ -3758,8 +3758,9 @@ ul.list-reset {
 .section-projects .card-project {
   margin-bottom: 30px;
 }
-.into-hidden {
-  display: none !important;
+.intro-hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 @media (max-width: 575px) {
   .section-projects .section-inner {
