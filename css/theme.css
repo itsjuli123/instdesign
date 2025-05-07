@@ -4781,4 +4781,30 @@ ul.list-reset {
 
 .wow {
   visibility: hidden;
+  /* === ENHANCEMENTS TO MODAL VISIBILITY === */
+.modal .modal-dialog {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  border: 3px solid #fff537;
+  border-radius: 10px;
+}
+
+.modal-header-control .btn-close {
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  color: #333;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.modal-header-control .btn-close:hover {
+  background-color: #e5dd32;
+  border-color: #e5dd32;
+  color: #111;
+  transform: scale(1.1);
+}
+
+.modal-header-control .btn-close i {
+  font-size: 1.4rem;
+}
 }
