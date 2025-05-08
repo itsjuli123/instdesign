@@ -3660,7 +3660,19 @@ ul.list-reset {
   transition: all 0.3s ease;
   width: 60px;
 }
-
+.top-header-line {
+  height: 15px;
+  background-color: #f0c18a;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+}
+.header-primary,
+.header-mobile {
+  margin-top: 15px;
+}
 /*
 ========================================================================
     SECTION INTRO
