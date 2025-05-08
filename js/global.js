@@ -276,6 +276,7 @@
         } else {
             header_bar.removeClass("sticky");
         }
+        $(window).trigger("scroll");
     });
 
     // Bind to scroll
