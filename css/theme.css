@@ -3865,7 +3865,7 @@ ul.list-reset {
 ========================================================================
 */
 .section-contact .bg-overlay {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.95);
 }
 .bg-overlay-pattern {
   background-image: url("../images/hextile2.png");
