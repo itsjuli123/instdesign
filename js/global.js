@@ -276,8 +276,11 @@
         } else {
             header_bar.removeClass("sticky");
         }
-        $(window).trigger("scroll");
     });
+    // Immediately apply sticky class if the page is not at the top
+if ($(window).scrollTop() > header_bar_offsetTop) {
+    header_bar.addClass("sticky");
+};
 
     // Bind to scroll
     var topMenu = header_bar,
