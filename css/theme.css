@@ -2381,7 +2381,7 @@ input[type='submit'], button[type='button'] {
 /*Button*/
 .au-btn {
   line-height: 46px;
-  background: #fff537;
+  background: #f0c18a;
   padding: 0 30px;
   display: inline-block;
   -webkit-transition: all 0.3s ease;
@@ -2390,7 +2390,7 @@ input[type='submit'], button[type='button'] {
   transition: all 0.3s ease;
   color: #333333;
   font-family: "Montserrat", sans-serif;
-  border: 2px solid #fff537;
+  border: 2px solid #f0c18a;
   font-size: 15px;
 }
 
@@ -2404,8 +2404,8 @@ input[type='submit'], button[type='button'] {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #333333;
-  background: #fff652;
-  border-color: #fff652;
+  background: #f0c18a;
+  border-color: #f0c18a;
 }
 
 .au-btn:active {
@@ -2445,8 +2445,8 @@ input[type='submit'], button[type='button'] {
 }
 
 .au-btn-circle:hover {
-  background: #fff537;
-  border-color: #fff537;
+  background: #f0c18a;
+  border-color: #f0c18a;
 }
 
 .au-btn-circle:active {
@@ -2595,7 +2595,7 @@ input[type='submit'], button[type='button'] {
 }
 
 .dots-style-1 li.slick-active button {
-  background: #fff537;
+  background: #f0c18a;
 }
 
 .slick-dots-2 {
@@ -2862,7 +2862,7 @@ input[type='submit'], button[type='button'] {
 }
 
 .social-list .list-item a:hover {
-  background: #fff537;
+  background: #f0c18a;
 }
 
 .social-list .list-item a:active {
@@ -2999,7 +2999,7 @@ ul.list-reset {
 .navbar-mobile .navbar-nav {
   display: block;
   border-bottom: 1px solid #e5e5e5;
-  background: #fff537;
+  background: #f0c18a;
 }
 
 .navbar-mobile .navbar-nav .nav-item {
@@ -3206,7 +3206,7 @@ ul.list-reset {
 }
 
 .card-secondary .card-figure:hover .bg-overlay {
-  background: rgba(255, 245, 55, 0.3);
+  background: rgba(240, 193, 139, 1);
 }
 
 .card-secondary .card-figure img {
@@ -3247,7 +3247,7 @@ ul.list-reset {
 .card-service .card-figure .service-icon {
   width: 82px;
   height: 82px;
-  background: #fff537;
+  background: #f0c18a;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
@@ -3309,7 +3309,7 @@ ul.list-reset {
   -o-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  color: #fff537;
+  color: #f0c18a;
 }
 
 .card-resume .card-figure {
@@ -3382,7 +3382,7 @@ ul.list-reset {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 25px;
-  background: #fff537;
+  background: #f0c18a;
   position: absolute;
   bottom: -105px;
   left: 0;
@@ -3919,7 +3919,7 @@ ul.list-reset {
 }
 
 .section-footer .footer-social .list-item a:hover {
-  background: #fff537;
+  background: #f0c18a;
   color: #333333;
 }
 
@@ -3934,7 +3934,7 @@ ul.list-reset {
 
 .section-footer .footer-text-intro .fa {
   margin: 0 3px;
-  color: #fff537;
+  color: #f0c18a;
 }
 
 .section-footer .footer-copy-text {
@@ -4585,8 +4585,8 @@ ul.list-reset {
 }
 
 .modal-primary .modal-header .au-btn:hover {
-  background: #fff537;
-  border-color: #fff537;
+  background: #f0c18a;
+  border-color: #f0c18a;
 }
 
 .modal-primary .modal-header .au-btn:active {
@@ -4704,7 +4704,7 @@ ul.list-reset {
   height: 40px;
   width: 40px;
   line-height: 40px;
-  background: #fff537;
+  background: #f0c18a;
   -webkit-transition: background-color 0.1s linear;
   -o-transition: background-color 0.1s linear;
   -moz-transition: background-color 0.1s linear;
@@ -4792,7 +4792,7 @@ ul.list-reset {
   /* === ENHANCEMENTS TO MODAL VISIBILITY === */
 .modal .modal-dialog {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
-  border: 3px solid #fff537;
+  border: 3px solid #f0c18a;
   border-radius: 10px;
 }
 
