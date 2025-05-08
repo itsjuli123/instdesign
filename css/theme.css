@@ -3570,7 +3570,7 @@ ul.list-reset {
 }
 
 .header-primary.sticky {
-  background: #6E304B;
+  background: #fff;
   padding: 10px 0;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
