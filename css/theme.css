@@ -3642,6 +3642,10 @@ ul.list-reset {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+.header-mobile .header-bar .header-bar-logo img {
+  position: relative;
+  top: -5px; /* overlap by 5px */
+}
 
 .header-mobile .navbar-primary {
   position: absolute;
