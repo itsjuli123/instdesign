@@ -3599,6 +3599,18 @@ ul.list-reset {
 .header-primary.sticky .header-bar-menu {
   padding-bottom: 0;
 }
+/* Apply margin only when not sticky */
+.header-primary:not(.sticky),
+.header-mobile:not(.sticky) {
+  margin-top: 15px;
+}
+
+/* When sticky, no extra margin — we already use top: 15px */
+.header-primary.sticky,
+.header-mobile.sticky {
+  top: 15px;
+  margin-top: 0;
+}
 
 .header-fixed {
   position: absolute;
