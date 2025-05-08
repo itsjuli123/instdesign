@@ -3867,6 +3867,13 @@ ul.list-reset {
 .section-contact .bg-overlay {
   background: rgba(0, 0, 0, 0.8);
 }
+.bg-overlay-pattern {
+  background-image: url("../images/hextile2.png");
+  background-repeat: repeat;
+  background-size: auto;
+  opacity: 0.6; /* Adjust to taste */
+  z-index: 0;
+}
 
 @media (max-width: 767px) {
   .section-contact .box-contact-info {
