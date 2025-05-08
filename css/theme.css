@@ -24,8 +24,8 @@ Primary use:	Company
 # Text Color (text): #666666
 # Text Color Deep (Text, title): #333333
 # Primary Color Light:  #fff652
-# Primary Color:   #fff537
-# Primary Color Dark:  #e5dd32
+# Primary Color:   #f0c18a
+# Primary Color Dark:  #f0c18a
 
 ------------------------------------------------------------------*/
 /*------------------------------------------------------------------
@@ -102,11 +102,11 @@ a:active {
 }
 
 a:hover {
-  color: #fff652;
+  color: #f0c18a;
 }
 
 a:active {
-  color: #e5dd32;
+  color: #f0c18a;
 }
 
 a:hover,
@@ -2414,8 +2414,8 @@ input[type='submit'], button[type='button'] {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #333333;
-  background: #e5dd32;
-  border-color: #e5dd32;
+  background: #f0c18a;
+  border-color: #f0c18a;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -2450,8 +2450,8 @@ input[type='submit'], button[type='button'] {
 }
 
 .au-btn-circle:active {
-  background: #e5dd32;
-  border-color: #e5dd32;
+  background: #f0c18a;
+  border-color: #f0c18a;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -2581,7 +2581,7 @@ input[type='submit'], button[type='button'] {
 }
 
 .dots-style-1 li button:hover {
-  background: #e5dd32;
+  background: #f0c18a;
 }
 
 .dots-style-1 li button:focus {
@@ -2866,7 +2866,7 @@ input[type='submit'], button[type='button'] {
 }
 
 .social-list .list-item a:active {
-  background: #e5dd32;
+  background: #f0c18a;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -2930,7 +2930,7 @@ input[type='submit'], button[type='button'] {
 }
 
 .help-block.with-errors .list-unstyled li {
-  color: #e5dd32;
+  color: #f0c18a;
   padding-left: 5px;
   font-size: 12px;
   display: inline-block;
@@ -3012,7 +3012,7 @@ ul.list-reset {
 }
 
 .navbar-mobile .navbar-nav .nav-item.active .nav-link {
-  background: #e5dd32;
+  background: #f0c18a;
 }
 
 .navbar-mobile .navbar-nav .nav-link {
@@ -3333,7 +3333,7 @@ ul.list-reset {
 }
 
 .card-resume .card-header .resume-title a:hover {
-  color: #e5dd32;
+  color: #f0c18a;
 }
 
 .card-resume .card-header .resume-company {
@@ -3443,7 +3443,7 @@ ul.list-reset {
 }
 
 .card-blog .blog-title a:hover {
-  color: #e5dd32;
+  color: #f0c18a;
 }
 
 /*-----------------------------------------------------*/
@@ -3924,7 +3924,7 @@ ul.list-reset {
 }
 
 .section-footer .footer-social .list-item a:active {
-  background: #e5dd32;
+  background: #f0c18a;
 }
 
 .section-footer .footer-text-intro {
@@ -3979,7 +3979,7 @@ ul.list-reset {
 }
 
 .post-blog .post-info .post-info-item a:hover {
-  color: #e5dd32;
+  color: #f0c18a;
 }
 
 .post-blog .post-info .post-info-item span {
@@ -4052,8 +4052,8 @@ ul.list-reset {
 }
 
 .post-blog .post-tags .post-tag-item a:hover {
-  color: #e5dd32;
-  border-color: #e5dd32;
+  color: #f0c18a;
+  border-color: #f0c18a;
 }
 
 @media (max-width: 767px) {
@@ -4172,7 +4172,7 @@ ul.list-reset {
 }
 
 .post-blog .post-author .post-author-text .post-author-name:hover {
-  color: #e5dd32;
+  color: #f0c18a;
 }
 
 @media (max-width: 991px) {
@@ -4299,7 +4299,7 @@ ul.list-reset {
 }
 
 .comment-pane .comment-item .comment-text .comment-info a:hover {
-  color: #e5dd32;
+  color: #f0c18a;
 }
 
 .comment-pane .comment-item .comment-text .comment-info .comment-reply {
@@ -4466,11 +4466,11 @@ ul.list-reset {
 }
 
 .post-project .project-aside .project-aside-list li a:hover {
-  color: #e5dd32;
+  color: #f0c18a;
 }
 
 .post-project .project-aside .project-aside-list li a:hover:after {
-  background: #e5dd32;
+  background: #f0c18a;
 }
 
 .post-project .project-aside .project-aside-list li .t-left {
@@ -4491,7 +4491,7 @@ ul.list-reset {
 }
 
 .post-project .project-aside .project-aside-list li .cate-link a:hover {
-  color: #e5dd32;
+  color: #f0c18a;
 }
 
 .post-project .project-aside .project-aside-list li:first-child {
@@ -4590,8 +4590,8 @@ ul.list-reset {
 }
 
 .modal-primary .modal-header .au-btn:active {
-  background: #e5dd32;
-  border-color: #e5dd32;
+  background: #f0c18a;
+  border-color: #f0c18a;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -4715,7 +4715,7 @@ ul.list-reset {
 }
 
 #up-to-top:hover {
-  background: #e5dd32;
+  background: #f0c18a;
 }
 
 #up-to-top:active {
@@ -4806,8 +4806,8 @@ ul.list-reset {
 }
 
 .modal-header-control .btn-close:hover {
-  background-color: #e5dd32;
-  border-color: #e5dd32;
+  background-color: #f0c18a;
+  border-color: #f0c18a;
   color: #111;
   transform: scale(1.1);
 }
