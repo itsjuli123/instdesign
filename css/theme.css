@@ -59,6 +59,7 @@ body {
   background-size: auto;     /* Keeps the original size for tiling */
   background-position: top left;
   background-attachment: fixed; /* Optional: keeps the image fixed on scroll */
+  padding-top: 30px; /* Add this line */
 }
 
 h1,
@@ -4806,5 +4807,15 @@ ul.list-reset {
 
 .modal-header-control .btn-close i {
   font-size: 1.4rem;
+}
+/* === Top Header Line === */
+.top-header-line {
+  height: 30px;
+  background-color: #6E304B; /* Or another color that fits your theme */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
 }
 }
