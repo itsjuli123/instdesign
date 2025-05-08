@@ -3581,6 +3581,9 @@ ul.list-reset {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
 }
+.header-primary.sticky {
+  top: 15px;
+}
 
 .header-primary.sticky .header-bar-logo img {
   width: 60px;
