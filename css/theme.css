@@ -4810,7 +4810,7 @@ ul.list-reset {
 }
 /* === Top Header Line === */
 .top-header-line {
-  height: 30px;
+  height: 15px;
   background-color: #6E304B; /* Or another color that fits your theme */
   width: 100%;
   position: fixed;
