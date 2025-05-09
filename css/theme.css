@@ -2640,7 +2640,7 @@ input[type='submit'], button[type='button'] {
 .slick-dots-2 li.slick-active {
   width: 10px;
   height: 10px;
-  background: #6E304B;
+  background: #333333;
 }
 
 /*Slick arrow*/
