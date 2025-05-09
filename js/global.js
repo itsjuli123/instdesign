@@ -456,20 +456,36 @@ if ($(window).scrollTop() > header_bar_offsetTop) {
         return this.id;
     }).get();
 
-    $('.section-project-post').each(function (index) {
-        var $modal = $(this);
+   $('.section-project-post').each(function (index) {
+    var $modal = $(this);
 
-        $modal.find('.btn-prev').on('click', function () {
-            var prevIndex = (index - 1 + modalIds.length) % modalIds.length;
-            $modal.modal('hide');
+    $modal.find('.btn-prev').on('click', function () {
+        var prevIndex = (index - 1 + modalIds.length) % modalIds.length;
+
+        $modal.on('hidden.bs.modal', function () {
+            // Reset scroll lock and show next modal
+            $('body').removeClass('modal-open');
+            $('.modal-backdrop').remove();
             $('#' + modalIds[prevIndex]).modal('show');
+            $modal.off('hidden.bs.modal');
         });
 
-        $modal.find('.btn-next').on('click', function () {
-            var nextIndex = (index + 1) % modalIds.length;
-            $modal.modal('hide');
-            $('#' + modalIds[nextIndex]).modal('show');
-        });
+        $modal.modal('hide');
     });
+
+    $modal.find('.btn-next').on('click', function () {
+        var nextIndex = (index + 1) % modalIds.length;
+
+        $modal.on('hidden.bs.modal', function () {
+            $('body').removeClass('modal-open');
+            $('.modal-backdrop').remove();
+            $('#' + modalIds[nextIndex]).modal('show');
+            $modal.off('hidden.bs.modal');
+        });
+
+        $modal.modal('hide');
+    });
+});
+
 
 })(jQuery);
