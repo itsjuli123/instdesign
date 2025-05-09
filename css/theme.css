@@ -4643,7 +4643,7 @@ ul.list-reset {
 }
 
 .modal .modal-dialog {
-  position: absolute;
+  position: relative; /* or remove the 'position' altogether */;
   top: 0;
   left: 0;
   bottom: 0;
