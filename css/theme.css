@@ -4859,4 +4859,8 @@ ul.list-reset {
   left: 0;
   z-index: 10000;
 }
+/* === Custom overrides === */
+a {
+  text-decoration: none !important;
+}
 }
