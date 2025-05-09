@@ -4718,7 +4718,9 @@ ul.list-reset {
 .modal-open .modal-dialog {
   overflow-y: auto;
 }
-
+.modal .project-aside-list li a:after {
+  display: none !important;
+}
 /*
 ========================================================================
     Other
