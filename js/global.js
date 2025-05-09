@@ -451,5 +451,25 @@ if ($(window).scrollTop() > header_bar_offsetTop) {
         $('html, body').animate({scrollTop: 0}, duration);
         return false;
     });
+     // Enable modal navigation with Prev/Next buttons
+    var modalIds = $('.section-project-post').map(function () {
+        return this.id;
+    }).get();
+
+    $('.section-project-post').each(function (index) {
+        var $modal = $(this);
+
+        $modal.find('.btn-prev').on('click', function () {
+            var prevIndex = (index - 1 + modalIds.length) % modalIds.length;
+            $modal.modal('hide');
+            $('#' + modalIds[prevIndex]).modal('show');
+        });
+
+        $modal.find('.btn-next').on('click', function () {
+            var nextIndex = (index + 1) % modalIds.length;
+            $modal.modal('hide');
+            $('#' + modalIds[nextIndex]).modal('show');
+        });
+    });
 
 })(jQuery);
