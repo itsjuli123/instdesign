@@ -4862,6 +4862,47 @@ ul.list-reset {
   z-index: 10000;
 }
 }
+/* Intro layout enhancements */
+.section-intro .intro-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.section-intro .intro-left {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+.section-intro .intro-right {
+  flex: 1 1 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.section-intro .intro-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px; /* optional for rounded corners */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+/* Medium and up screens */
+@media (min-width: 768px) {
+  .section-intro .intro-left,
+  .section-intro .intro-right {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+
+  .section-intro .intro-right {
+    text-align: right;
+  }
+}
+
 /* === Custom overrides === */
 a {
   text-decoration: none !important;
