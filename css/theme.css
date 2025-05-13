@@ -4906,7 +4906,7 @@ ul.list-reset {
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  gap: 30px; /* spacing between buttons */
+  gap: 15px; /* spacing between buttons */
 }
 
 .contact-buttons .list-item {
