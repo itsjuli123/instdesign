@@ -4611,25 +4611,36 @@ ul.list-reset {
   justify-content: space-between;
   border-bottom: none;
 }
-
 .modal-primary .modal-header .au-btn {
   background: #fff;
   border-color: #fff;
   margin-left: 10px;
+  transition: outline 0.2s ease;
 }
 
+/* Show outline when focused, but not hovered or active */
+.modal-primary .modal-header .au-btn:focus:not(:hover):not(:active),
+.modal-primary .modal-header .au-btn:focus-visible:not(:hover):not(:active) {
+  outline: 1px solid #6e304B;
+}
+
+/* Remove outline on hover */
 .modal-primary .modal-header .au-btn:hover {
   background: #f0c18a;
   border-color: #f0c18a;
+  outline: none;
 }
 
+/* Remove outline on active/click */
 .modal-primary .modal-header .au-btn:active {
   background: #f0c18a;
   border-color: #f0c18a;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  outline: none;
 }
+
 
 .modal-primary .modal-body {
   padding: 0 0 90px 0;
