@@ -4642,20 +4642,15 @@ ul.list-reset {
 }
 
 .modal .modal-dialog {
-  position: relative; /* or remove the 'position' altogether */;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  position: relative;
   background: #fff;
-  margin: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  max-width: none;
+  max-width: 600px; /* adjust as needed */
+  width: 90%;       /* responsive scaling */
+  margin: 50px auto; /* center it and give top spacing */
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  border: 3px solid #f0c18a;
+  border-radius: 10px;
   -webkit-animation-duration: 0.3s;
-  -moz-animation-duration: 0.3s;
-  -o-animation-duration: 0.3s;
   animation-duration: 0.3s;
 }
 
