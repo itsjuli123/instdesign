@@ -4693,11 +4693,12 @@ ul.list-reset {
   transform: translate(0);
 }
 
-@media (max-width: 991px) {
-  .modal {
-    margin-left: 0;
+@media (min-width: 768px) {
+  .modal-70 {
+    max-width: 70vw;
   }
 }
+
 
 .modal-open .modal {
   overflow-y: auto;
