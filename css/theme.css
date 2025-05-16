@@ -4925,7 +4925,7 @@ ul.list-reset {
   margin: 0 auto;
 }
 
-/* === Custom overrides === */
-a {
-  text-decoration: none !important;
+/* === No link underlines in project posts === */
+.section-project-post a {
+  text-decoration: none;
 }
