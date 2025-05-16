@@ -4693,14 +4693,16 @@ ul.list-reset {
   transform: translate(0);
 }
 
+.modal-70 {
+  max-width: 70% !important;
+}
+
 @media (min-width: 768px) {
   .modal-70 {
     max-width: 70vw;
   }
 }
-.modal-70 {
-  max-width: 70% !important;
-}
+
 
 
 .modal-open .modal {
