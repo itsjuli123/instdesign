@@ -4918,6 +4918,12 @@ ul.list-reset {
 .contact-buttons a.fa:hover {
   transform: scale(1.2);
   color: #f0c18a; /* Optional*
+/* Slightly smaller image for modal sections */
+.modal-img-sm {
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
 
 /* === Custom overrides === */
 a {
