@@ -2258,7 +2258,7 @@ input[type='submit'], button[type='button'] {
 }
 
 .bg-dark-1 {
-  background: #6e304B;
+  background: #a37e82;
 }
 
 .bg-parallax {
@@ -4917,7 +4917,9 @@ ul.list-reset {
 
 .contact-buttons a.fa:hover {
   transform: scale(1.2);
-  color: #f0c18a; /* Optional*
+  color: #f0c18a; /* Optional*/
+}
+
 /* Slightly smaller image for modal sections */
 .modal-img-sm {
   max-width: 80%;
