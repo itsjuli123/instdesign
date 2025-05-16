@@ -4698,6 +4698,9 @@ ul.list-reset {
     max-width: 70vw;
   }
 }
+.modal-70 {
+  max-width: 70% !important;
+}
 
 
 .modal-open .modal {
@@ -4833,14 +4836,20 @@ ul.list-reset {
   border: 3px solid #f0c18a;
   border-radius: 10px;
 }
-
 .modal-header-control .btn-close {
   background-color: #fff;
   border: 2px solid #e5e5e5;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
   color: #333;
   font-weight: bold;
   transition: all 0.3s ease;
+  padding: 0.4rem 0.6rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
 }
 
 .modal-header-control .btn-close:hover {
@@ -4851,8 +4860,10 @@ ul.list-reset {
 }
 
 .modal-header-control .btn-close i {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  line-height: 1;
 }
+
 /* === Top Header Line === */
 .top-header-line {
   height: 15px;
