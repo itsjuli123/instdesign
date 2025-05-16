@@ -821,8 +821,53 @@
     <script src="vendor/validator/validator.min.js"></script>
     <script src="js/config-contact.js"></script>
 
-    <!-- Main JS-->
-    <script src="js/global.js"></script>
+
+<!-- My Story Modals-->
+ <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutModalLabel">My HTML Journey: 1995–2025</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <section class="mb-5">
+          <h4>📟 1995: Middle School HTML</h4>
+          <p>I started by building a basic school website with eighth graders. We coded everything by hand using Notepad!</p>
+          <img src="images/html_1995.png" class="img-fluid mt-3" alt="Screenshot from 1995">
+        </section>
+
+        <section class="mb-5">
+          <h4>🖥️ 2025: Rebuilding My Portfolio</h4>
+          <p>30 years later, I customized a responsive HTML/CSS/JS portfolio site with zero experience in CSS or JavaScript. ChatGPT helped me solve design and layout problems step-by-step.</p>
+          <img src="images/portfolio_2025.png" class="img-fluid mt-3" alt="Modern Portfolio Screenshot">
+        </section>
+
+        <section>
+          <h4>💡 Lessons Learned</h4>
+          <ul>
+            <li>HTML still forms the backbone of the web.</li>
+            <li>CSS and JavaScript can be learned—even after decades away!</li>
+            <li>AI makes web development more accessible than ever.</li>
+          </ul>
+        </section>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="au-btn au-btn-pill" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Main JS-->
+<script src="js/global.js"></script>
+
+<!-- (Optional) Bootstrap & jQuery if not already loaded -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 
