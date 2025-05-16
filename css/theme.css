@@ -4717,6 +4717,11 @@ ul.list-reset {
 .modal .project-aside-list li a:after {
   display: none !important;
 }
+.modal-content {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
 /*
 ========================================================================
     Other
