@@ -3788,7 +3788,7 @@ ul.list-reset {
   color: #fff;
 }
 .section-projects .bg-overlay {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.0);
 }
 .section-projects .card-project {
   margin-bottom: 30px;
