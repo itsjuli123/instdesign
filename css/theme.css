@@ -3592,10 +3592,21 @@ ul.list-reset {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+/* Make the logo overlap half of the maroon line */
 .header-bar-logo img {
   position: relative;
-  top: -5px; /* overlap by 5px */
+  top: -7px; /* Half of 15px top line */
+  left: 0;
+  z-index: 1002;
 }
+
+/* Ensure the container doesn’t clip the logo */
+.header-bar,
+.section-inner,
+.container-fluid {
+  overflow: visible;
+}
+
 .header-primary.sticky .header-bar-menu {
   padding-bottom: 0;
 }
@@ -3656,8 +3667,11 @@ ul.list-reset {
 }
 .header-mobile .header-bar .header-bar-logo img {
   position: relative;
-  top: -5px; /* overlap by 5px */
+  top: -7px; /* overlap half of the 15px line */
+  left: 0;
+  z-index: 1002;
 }
+
 
 .header-mobile .navbar-primary {
   position: absolute;
