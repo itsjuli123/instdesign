@@ -332,6 +332,7 @@ if ($(window).scrollTop() > header_bar_offsetTop) {
 
     var modalAPImodal = modal.modal({
         backdrop: false,
+        show: false,
     });
 
     modalAPImodal.on('show.bs.modal', function () {
