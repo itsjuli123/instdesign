@@ -4861,6 +4861,16 @@ ul.list-reset {
   left: 0;
   z-index: 10000;
 }
+.modal-content .top-header-line {
+  height: 15px;
+  background-color: #6E304B;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
 }
 /* Intro layout enhancements */
 .section-intro .intro-content {
