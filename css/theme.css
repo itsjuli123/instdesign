@@ -4654,6 +4654,11 @@ ul.list-reset {
     margin: 2vh auto;
   }
 }
+@media (min-width: 992px) {
+  .modal-dialog.modal-lg {
+    max-width: 70% !important;
+  }
+}
 
 
 .modal .loader {
