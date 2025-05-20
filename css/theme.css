@@ -4611,6 +4611,9 @@ ul.list-reset {
   justify-content: space-between;
   border-bottom: none;
 }
+.modal-header-logo img {
+  width: 60px;
+}
 
 .modal-primary .modal-header .au-btn {
   background: #fff;
