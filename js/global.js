@@ -487,5 +487,9 @@ if ($(window).scrollTop() > header_bar_offsetTop) {
     });
 });
 
-
+// Prevent blank page when clicking mailto link
+$('a[href^="mailto:"]').on('click', function (e) {
+    e.preventDefault(); // Prevent default anchor behavior
+    window.location.href = $(this).attr('href'); // Manually trigger the mail client
+});
 })(jQuery);
