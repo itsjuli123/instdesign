@@ -125,11 +125,11 @@
                             I am a learning specialist with 24+ years of experience in adult learning, instructional design, and user support. I thrive when working at the intersection of people, process, and technology.
                         </span>
                     </p>
-                    <p class="intro-text">
-                        <span class="animated intro-hidden" data-intro-delay="1500" data-intro-animate="fadeInUp">
-                            <a class="au-btn au-btn-pill" href="https://www.linkedin.com/in/juli-lorton/" target="_blank">LinkedIn</a>
-                        </span>
-                    </p>
+                    <div class="intro-buttons animated intro-hidden" data-intro-delay="1500" data-intro-animate="fadeInUp">
+                        <a class="au-btn au-btn-pill" href="https://www.linkedin.com/in/juli-lorton/" target="_blank">LinkedIn</a>
+                        <a class="au-btn au-btn-pill" href="#" data-toggle="modal" data-target="#aboutModal">My Story</a>
+                    </div>
+
                 </div>
 
                 <!-- Right: Image -->
@@ -401,7 +401,24 @@
     </footer>
     <!-- end footer-->
 
-    
+    <!--My Story Modal-->
+    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutModalLabel">My Story</h5>
+        <button type="button" class="close au-btn au-btn-circle" data-dismiss="modal" aria-label="Close">
+          <i class="lnr lnr-cross"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="images/your-image.png" class="img-fluid mb-3" alt="My Story Image">
+        <p>Your story text goes here...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- section 1 project post-->
     <section class="section-project-post modal fade js-modal" id="project-post-1" tabindex="-1" role="dialog" aria-hidden="true">
