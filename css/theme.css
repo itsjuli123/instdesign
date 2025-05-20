@@ -3592,10 +3592,25 @@ ul.list-reset {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.header-bar-logo img {
+.header-bar-logo img,
+.modal-header-logo img {
+  width: 60px;
   position: relative;
-  top: -5px; /* overlap by 5px */
+  top: -11px; /* deeper overlap */
+  z-index: 1002; /* sits above top line */
+  border: 1px solid #fff; /* make logo stand out */
+  border-radius: 50%;     /* optional: makes it circular */
+  background-color: #fff; /* ensures logo doesn’t blend into maroon */
+  transition: all 0.3s ease;
 }
+@media (max-width: 575px) {
+  .header-bar-logo img,
+  .modal-header-logo img {
+    width: 50px;
+    top: -9px;
+  }
+}
+
 .header-primary.sticky .header-bar-menu {
   padding-bottom: 0;
 }
