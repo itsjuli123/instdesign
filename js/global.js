@@ -2,6 +2,12 @@
     // USE STRICT
     "use strict";
 
+// Ensure no modals are open on initial page load
+$('.modal').removeClass('show').css('display', '').attr('aria-hidden', 'true');
+$('body').removeClass('modal-open');
+$('.modal-backdrop').remove();
+
+
     // Global variables
     var html_body = $('html, body');
 
