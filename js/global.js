@@ -351,7 +351,6 @@ if ($(window).scrollTop() > header_bar_offsetTop) {
 
     var modalAPImodal = modal.modal({
         backdrop: false,
-        show: false
     });
 
     modalAPImodal.on('show.bs.modal', function () {
@@ -363,7 +362,7 @@ if ($(window).scrollTop() > header_bar_offsetTop) {
         var loader = $(this).find('.loader');
         loader.show();
         $(this).find('.modal-primary').delay(1000).fadeIn(500, function () {
-            slickClass.slick('setPosition');
+            $(this).find('.js-slick').slick('setPosition');
             loader.hide();
         });
     });
