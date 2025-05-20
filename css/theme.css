@@ -4954,9 +4954,11 @@ ul.list-reset {
 
 .story-text,
 .story-image {
-  flex: 1 1 100%;
-  max-width: 100%;
+  flex: 1 1 50%;
+  max-width: 50%;
+  padding: 10px;
 }
+
 
 .story-text {
   font-size: 18px;
@@ -4970,13 +4972,36 @@ ul.list-reset {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
+  .story-row,
+  .story-row.reverse {
+    flex-direction: column;
+  }
+
   .story-text,
   .story-image {
-    flex: 1 1 50%;
-    max-width: 50%;
+    flex: 1 1 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .story-text {
+    order: 2;
+  }
+
+  .story-image {
+    order: 1;
+  }
+
+  .story-row.reverse .story-text {
+    order: 1;
+  }
+
+  .story-row.reverse .story-image {
+    order: 2;
   }
 }
+
 /* === Custom overrides === */
 a {
   text-decoration: none !important;
