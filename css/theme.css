@@ -4612,9 +4612,11 @@ ul.list-reset {
   border-bottom: none;
 }
 .modal-header-logo img {
-  width: 60px;
+  width: 60px; /* match your header logo size */
+  position: relative;
+  top: -7.5px; /* overlap by 50% of 15px bar */
+  z-index: 20; /* ensure it's above the maroon bar */
 }
-
 .modal-primary .modal-header .au-btn {
   background: #fff;
   border-color: #fff;
