@@ -4505,6 +4505,17 @@ ul.list-reset {
   margin: 0;
   z-index: 10;
 }
+.sticky-carousel {
+  position: sticky;
+  top: 100px; /* Adjust to match space below modal header */
+  z-index: 1;
+}
+
+.scrollable-text {
+  max-height: 75vh; /* Adjust based on modal height */
+  overflow-y: auto;
+  padding-right: 15px; /* Optional scroll gutter */
+}
 
 
 .post-project .project-aside {
