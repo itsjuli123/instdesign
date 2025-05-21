@@ -4482,11 +4482,10 @@ ul.list-reset {
 }
 .post-image {
   position: relative;
-  padding-bottom: 0; /* remove extra space */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-bottom: 0; /* minimal space below image */
+  /* Removed flex styles that break slick layout */
 }
+
 
 
 .slick-dots-2 {
