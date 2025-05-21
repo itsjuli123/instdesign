@@ -5011,3 +5011,7 @@ ul.list-reset {
 a {
   text-decoration: none !important;
 }
+.slick-arrow-style-2 .arrow {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
