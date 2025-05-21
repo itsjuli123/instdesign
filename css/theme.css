@@ -3593,15 +3593,19 @@ ul.list-reset {
   transition: all 0.3s ease;
 }
 .header-bar-logo img,
-.modal-header-logo img {
-  width: 60px;
+.modal-header-logo {
   position: relative;
-  top: -11px; /* deeper overlap */
-  z-index: 1002; /* sits above top line */
-  border: 1px solid #fff; /* make logo stand out */
-  border-radius: 50%;     /* optional: makes it circular */
-  background-color: #fff; /* ensures logo doesn’t blend into maroon */
-  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.modal-header-logo img {
+  width: 60px; /* adjust size as needed */
+  position: absolute;
+  top: -10.5px; /* deeper overlap (70% of 15px line = 10.5px) */
+  left: 0;
+  z-index: 20;
+}
+
 }
 @media (max-width: 575px) {
   .header-bar-logo img,
