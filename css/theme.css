@@ -3592,22 +3592,26 @@ ul.list-reset {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.header-bar-logo img,
+.header-bar-logo img {
+  position: absolute;
+  top: -10.5px;
+  left: 0;
+  z-index: 1100;
+}
+
 .modal-header-logo {
   position: relative;
   z-index: 2;
 }
-
 .modal-header-logo img {
-  width: 60px; /* adjust size as needed */
+  width: 60px;
   position: absolute;
-  top: -10.5px; /* deeper overlap (70% of 15px line = 10.5px) */
+  top: -10.5px;
   left: 0;
-  margin-bottom: 0; /* ensure it’s not pushing content down */
-  z-index: 20;
+  margin-bottom: 0;
+  z-index: 1100;
 }
 
-}
 @media (max-width: 575px) {
   .header-bar-logo img,
   .modal-header-logo img {
@@ -4643,11 +4647,14 @@ ul.list-reset {
   border-bottom: none;
 }
 .modal-header-logo img {
-  width: 60px; /* match your header logo size */
-  position: relative;
-  top: -7.5px; /* overlap by 50% of 15px bar */
-  z-index: 20; /* ensure it's above the maroon bar */
+  width: 60px;
+  position: absolute;
+  top: -10.5px;
+  left: 0;
+  margin-bottom: 0;
+  z-index: 1100; /* Ensure it clears the top-header-line (1001) */
 }
+
 .modal-primary .modal-header .au-btn {
   background: #fff;
   border-color: #fff;
