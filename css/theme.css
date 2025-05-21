@@ -3930,10 +3930,9 @@ ul.list-reset {
   z-index: 0;
 }
 .section-contact .section-heading {
-  font-family: 'Poppins', Arial, "Helvetica Neue", sans-serif;
-  font-weight: 300;   /* Light font weight */
-  color: #f5f5f5;     /* Light grayish-white */
+  color: #f5f5f5;
 }
+
 
 
 @media (max-width: 767px) {
