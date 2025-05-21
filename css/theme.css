@@ -3603,6 +3603,7 @@ ul.list-reset {
   position: absolute;
   top: -10.5px; /* deeper overlap (70% of 15px line = 10.5px) */
   left: 0;
+  margin-bottom: 0; /* ensure it’s not pushing content down */
   z-index: 20;
 }
 
