@@ -127,9 +127,11 @@
                     </p>
                     <p class="intro-text">
                         <span class="animated intro-hidden" data-intro-delay="1500" data-intro-animate="fadeInUp">
-                            <a class="au-btn au-btn-pill" href="https://www.linkedin.com/in/juli-lorton/" target="_blank">LinkedIn</a>
+                            <a class="au-btn au-btn-pill mr-2" href="https://www.linkedin.com/in/juli-lorton/" target="_blank">LinkedIn</a>
+                            <button type="button" class="au-btn au-btn-pill" data-toggle="modal" data-target="#myStoryModal">My Story</button>
                         </span>
                     </p>
+
                 </div>
 
                 <!-- Right: Image -->
@@ -387,7 +389,77 @@
 <!-- end footer-->
 
 
-    
+ <!-- My Story Modal -->
+<section class="section-project-post modal fade js-modal" id="myStoryModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="loader"></div>
+    <div class="modal-content">
+      <div class="top-header-line"></div>
+      <div class="section-inner modal-primary">
+        <div class="container-fluid">
+          <div class="modal-header">
+            <div class="modal-header-logo">
+              <img src="images/icons/logo.png" alt="Juli Lorton logo">
+            </div>
+            <div class="modal-header-control">
+              <button class="btn-close au-btn au-btn-circle" type="button" data-dismiss="modal" aria-label="Close">
+                <i class="lnr lnr-cross"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-11 col-lg-9">
+              <div class="modal-body">
+                <article class="post-project m-b-55">
+                  <header class="post-header">
+                    <h3 class="post-title">My Story: Learning to Lead What You Don’t Yet Know</h3>
+                  </header>
+
+                  <!-- Story Section 1 -->
+                  <div class="row align-items-center mb-5">
+                    <div class="col-md-6">
+                      <img src="https://via.placeholder.com/600x400?text=1995+HTML+Beginnings" alt="1995 Middle School HTML" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6">
+                      <h4>📟 1995: Middle School HTML</h4>
+                      <p>I started by building a basic school website with eighth graders. We coded everything by hand using Notepad!</p>
+                    </div>
+                  </div>
+
+                  <!-- Story Section 2 -->
+                  <div class="row align-items-center mb-5 flex-md-row-reverse">
+                    <div class="col-md-6">
+                      <img src="https://via.placeholder.com/600x400?text=2008+EdTech+Pivot" alt="2008 EdTech Pivot" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6">
+                      <h4>🎓 2008: Graduate Studies in EdTech</h4>
+                      <p>After years of teaching multiple subjects, I pursued a Master's in Educational Technology to support teachers in creating tech-integrated learning environments.</p>
+                    </div>
+                  </div>
+
+                  <!-- Story Section 3 -->
+                  <div class="row align-items-center mb-5">
+                    <div class="col-md-6">
+                      <img src="https://via.placeholder.com/600x400?text=2025+Portfolio+Redesign" alt="2025 Portfolio Revamp" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6">
+                      <h4>🚀 2025: Portfolio Revamp</h4>
+                      <p>Using ChatGPT, I customized a modern portfolio template—diving into CSS and JavaScript for the first time and bringing my story to life online.</p>
+                    </div>
+                  </div>
+
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end My Story-->
 
     <!-- section 1 project post-->
     <section class="section-project-post modal fade js-modal" id="project-post-1" tabindex="-1" role="dialog" aria-hidden="true">
