@@ -3706,6 +3706,12 @@ ul.list-reset {
   left: 0;
   z-index: 1001;
 }
+/* Modal-specific top header line */
+.modal .top-header-line {
+  position: relative;
+  top: 0;
+  z-index: 1;
+}
 .header-primary,
 .header-mobile {
   margin-top: 15px;
