@@ -4482,7 +4482,7 @@ ul.list-reset {
 }
 .post-image {
   position: relative; /* required to position dots absolutely inside */
-  padding-bottom: 40px; /* gives space below image for the dots */
+  padding-bottom: 20px; /* gives space below image for the dots */
 }
 
 .slick-dots-2 {
