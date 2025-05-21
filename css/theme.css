@@ -4481,13 +4481,17 @@ ul.list-reset {
   overflow: hidden;
 }
 .post-image {
-  position: relative; /* required to position dots absolutely inside */
-  padding-bottom: 20px; /* gives space below image for the dots */
+  position: relative;
+  padding-bottom: 0; /* remove extra space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .slick-dots-2 {
   position: absolute;
-  bottom: 10px;
+  bottom: 0; /* as close as possible */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -4496,6 +4500,7 @@ ul.list-reset {
   margin: 0;
   z-index: 10;
 }
+
 .sticky-carousel {
   position: sticky;
   top: 100px; /* Adjust to match space below modal header */
