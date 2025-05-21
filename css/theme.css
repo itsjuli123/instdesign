@@ -2374,17 +2374,6 @@ input[type='submit'], button[type='button'] {
     max-width: 1200px;
   }
 }
-.header-bar-logo img {
-  position: relative;
-  z-index: 1002; /* Higher than .top-header-line */
-}
-/* Logo positioning fix for all views */
-.header-bar-logo img,
-.modal-header-logo img {
-  padding-left: 2px;       /* Indent logo from the left */
-  position: relative;      /* Required for z-index */
-  z-index: 1102 !important; /* Ensure it's above .top-header-line (z-index: 1001) */
-}
 
 /*-----------------------------------------------------*/
 /*                   COMPONENTS                        */
@@ -3603,22 +3592,28 @@ ul.list-reset {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+.header-bar-logo {
+  position: relative;
+  z-index: 1101; /* Above .top-header-line at 1001 */
+}
+
 .header-bar-logo img {
   position: absolute;
   top: -10.5px;
-  left: 3;
+  left: 2px; /* Fixed the missing unit */
   z-index: 1102;
 }
 
+
 .modal-header-logo {
   position: relative;
-  z-index: 2;
+  z-index: 1102;
 }
 .modal-header-logo img {
   width: 60px;
   position: absolute;
   top: -10.5px;
-  left: 0;
+  left: 2px;
   margin-bottom: 0;
   z-index: 1102;
 }
@@ -3717,21 +3712,17 @@ ul.list-reset {
   transition: all 0.3s ease;
   width: 60px;
 }
-.top-header-line {
+.top-header-line,
+.modal .top-header-line {
   height: 15px;
   background-color: #6E304B;
   width: 100%;
-  position: fixed;
+  position: fixed; /* or relative if inside modals */
   top: 0;
   left: 0;
   z-index: 1001;
 }
-/* Modal-specific top header line */
-.modal .top-header-line {
-  position: relative;
-  top: 0;
-  z-index: 1001;
-}
+
 .header-primary,
 .header-mobile {
   margin-top: 15px;
@@ -4685,14 +4676,6 @@ ul.list-reset {
   justify-content: space-between;
   border-bottom: none;
 }
-.modal-header-logo img {
-  width: 60px;
-  position: absolute;
-  top: -10.5px;
-  left: 5;
-  margin-bottom: 0;
-  z-index: 1100; /* Ensure it clears the top-header-line (1001) */
-}
 
 .modal-primary .modal-header .au-btn {
   background: #fff;
@@ -4968,15 +4951,6 @@ ul.list-reset {
   font-size: 1.4rem;
 }
 /* === Top Header Line === */
-.top-header-line {
-  height: 15px;
-  background-color: #6E304B; /* Or another color that fits your theme */
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10000;
-}
 .modal-content .top-header-line {
   height: 15px;
   background-color: #6E304B;
