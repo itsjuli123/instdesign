@@ -3595,8 +3595,8 @@ ul.list-reset {
 .header-bar-logo img {
   position: absolute;
   top: -10.5px;
-  left: 5;
-  z-index: 1100;
+  left: 3;
+  z-index: 1102;
 }
 
 .modal-header-logo {
@@ -3609,7 +3609,7 @@ ul.list-reset {
   top: -10.5px;
   left: 0;
   margin-bottom: 0;
-  z-index: 1100;
+  z-index: 1102;
 }
 
 @media (max-width: 575px) {
