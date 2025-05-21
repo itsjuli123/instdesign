@@ -4489,6 +4489,23 @@ ul.list-reset {
   border-radius: 15px;
   overflow: hidden;
 }
+.post-image {
+  position: relative; /* required to position dots absolutely inside */
+  padding-bottom: 40px; /* gives space below image for the dots */
+}
+
+.slick-dots-2 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+}
+
 
 .post-project .project-aside {
   margin-top: 10px;
