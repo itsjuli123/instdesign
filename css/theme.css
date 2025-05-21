@@ -2374,6 +2374,10 @@ input[type='submit'], button[type='button'] {
     max-width: 1200px;
   }
 }
+.header-bar-logo img {
+  position: relative;
+  z-index: 1002; /* Higher than .top-header-line */
+}
 
 /*-----------------------------------------------------*/
 /*                   COMPONENTS                        */
