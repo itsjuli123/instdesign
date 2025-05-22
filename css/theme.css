@@ -3840,6 +3840,18 @@ ul.list-reset {
     padding: 0;
   }
 }
+/* Prevent separate scrolling on mobile */
+@media (max-width: 767px) {
+  .scrollable-text {
+    max-height: none !important;
+    overflow-y: visible !important;
+  }
+
+  .sticky-carousel {
+    position: static !important;
+    top: auto !important;
+  }
+}
 
 /*
 ========================================================================
