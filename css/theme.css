@@ -5015,3 +5015,23 @@ a {
   opacity: 1 !important;
   visibility: visible !important;
 }
+@media (max-width: 767px) {
+  .modal .modal-dialog {
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .modal .modal-content {
+    height: 100%;
+    overflow: hidden;
+  }
+  .modal .modal-body {
+    overflow: hidden;
+    height: 100%;
+    padding-bottom: 0;
+  }
+  body.modal-open {
+    overflow: hidden;
+  }
+}
