@@ -5156,7 +5156,7 @@ a {
    CUSTOM OVERRIDES – Carousel Image Height
 -------------------------------------------------- */
 .project-image-item img {
-  height: 400px;          /* Adjust this to your desired uniform height */
+  height: 680px;          /* Adjust this to your desired uniform height */
   width: 100%;
   object-fit: cover;      /* or 'contain' depending on the look you want */
 }
