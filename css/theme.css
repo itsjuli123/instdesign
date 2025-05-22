@@ -5144,4 +5144,11 @@ a {
     border-radius: 3px;
   }
 }
+#myStoryModal .modal-dialog {
+  overflow: visible !important;
+}
+
+#myStoryModal .modal-body {
+  overflow: visible !important;
+}
 
