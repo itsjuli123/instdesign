@@ -5035,3 +5035,9 @@ a {
     overflow: hidden;
   }
 }
+@media (max-width: 767px) {
+  .sticky-carousel {
+    position: static !important;
+    top: auto !important;
+  }
+}
