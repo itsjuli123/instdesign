@@ -3785,6 +3785,12 @@ ul.list-reset {
   -o-animation-duration: 1.5s;
   animation-duration: 1.5s;
 }
+@media (max-width: 575px) {
+  .intro-name {
+    margin-top: 20px; /* Adjust as needed */
+  }
+}
+
 
 /*
 ========================================================================
@@ -5092,7 +5098,7 @@ a {
   }
 }
 
-}
+
 @media (max-width: 767px) {
   .sticky-carousel {
     position: static !important;
