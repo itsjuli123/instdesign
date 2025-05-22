@@ -333,31 +333,35 @@ if ($(window).scrollTop() > header_bar_offsetTop) {
     // Tooltips
     $('[data-toggle="tooltip"]').tooltip();
 
-    // Config Modal
-    var modal = $('.js-modal');
+   // Config Modal
+        var modal = $('.js-modal');
 
-    var modalAPImodal = modal.modal({
-        backdrop: false,
-        show: false,
-    });
-
-    modalAPImodal.on('show.bs.modal', function () {
-        $(this).find('.modal-dialog').attr('class', 'modal-dialog  ' + 'fadeIn' + '  animated');
-        $(this).find('.modal-primary').hide();
-    });
-
-    modalAPImodal.on('shown.bs.modal', function () {
-        var loader = $(this).find('.loader');
-        loader.show();
-        $(this).find('.modal-primary').delay(1000).fadeIn(500, function () {
-            $(this).find('.js-slick').slick('setPosition');
-            loader.hide();
+        var modalAPImodal = modal.modal({
+            backdrop: false,
+            show: false,
         });
-    });
 
-    modalAPImodal.on('hide.bs.modal', function () {
-        $(this).find('.modal-dialog').attr('class', 'modal-dialog  ' + 'fadeOut' + '  animated');
-    });
+        modalAPImodal.on('show.bs.modal', function () {
+            $(this).find('.modal-dialog').attr('class', 'modal-dialog  ' + 'fadeIn' + '  animated');
+            $(this).find('.modal-primary').hide();
+        });
+
+        modalAPImodal.on('shown.bs.modal', function () {
+            var loader = $(this).find('.loader');
+            loader.show();
+            $(this).find('.modal-primary').delay(1000).fadeIn(500, function () {
+                $(this).find('.js-slick').slick('setPosition');
+                loader.hide();
+
+                // 🔥 Trigger story section animations
+                $(this).find('.animate-left, .animate-right').addClass('start');
+            });
+        });
+
+modalAPImodal.on('hide.bs.modal', function () {
+    $(this).find('.modal-dialog').attr('class', 'modal-dialog  ' + 'fadeOut' + '  animated');
+});
+
 
     // Config Slick Arrow Testimonials
 
