@@ -2600,7 +2600,7 @@ input[type='submit'], button[type='button'] {
 
 .slick-dots-2 {
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   left: 50%;
   margin-left: -31px;
   display: -webkit-box;
