@@ -3884,49 +3884,59 @@ ul.list-reset {
   width: 830px;
   margin: 0 auto;
   padding-top: 40px;
+  position: relative; /* ensures arrows position relative to this */
 }
 
 .section-testimonials .section-content .arrow {
-  margin-top: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.85); /* optional: helps with visibility */
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  cursor: pointer;
 }
 
+/* Position arrows just outside the testimonial box on desktop */
 .section-testimonials .section-content .arrow-prev {
-  left: 230px;
+  left: -50px;
 }
 
 .section-testimonials .section-content .arrow-next {
-  right: 230px;
+  right: -50px;
 }
 
+/* Tablet adjustments */
 @media (max-width: 991px) {
   .section-testimonials .section-content {
     width: 100%;
+    padding: 40px 20px;
   }
   .section-testimonials .section-content .arrow-prev {
-    left: 180px;
+    left: -30px;
   }
   .section-testimonials .section-content .arrow-next {
-    right: 180px;
+    right: -30px;
   }
 }
 
+/* Mobile: move arrows below the content, side by side and centered */
 @media (max-width: 767px) {
-  .section-testimonials .section-content .arrow-prev {
-    left: 100px;
+  .section-testimonials .section-content .arrow {
+    position: static;
+    transform: none;
+    margin: 10px;
+    display: inline-block;
   }
-  .section-testimonials .section-content .arrow-next {
-    right: 100px;
+
+  .section-testimonials .section-content {
+    text-align: center;
   }
 }
 
-@media (max-width: 575px) {
-  .section-testimonials .section-content .arrow-prev {
-    left: 30px;
-  }
-  .section-testimonials .section-content .arrow-next {
-    right: 30px;
-  }
-}
 
 /*
 ========================================================================
