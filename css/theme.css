@@ -3893,12 +3893,14 @@ ul.list-reset {
   transform: translateY(-50%);
   z-index: 10;
   font-size: 30px;
-  color: #000; /* ensures arrow icon is black */
-  padding: 3px;
-  border-radius: 50%;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  color: #333333; /* ensures arrow icon is black */
   cursor: pointer;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
 }
+
 
 /* Position arrows just outside the testimonial box on desktop */
 .section-testimonials .section-content .arrow-prev {
