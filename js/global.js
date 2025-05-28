@@ -365,17 +365,27 @@ modalAPImodal.on('hide.bs.modal', function () {
 
     // Config Slick Arrow Testimonials
 
-    function posArrow() {
-        $('.js-slick-test').each(function () {
-            var x = $(this).find('.client-avatar img').offset().top - $(this).offset().top;
-            $(this).find('.arrow').css('top', x);
-        });
-    }
-    posArrow();
-
-    $(window).on('resize', function () {
-        posArrow();
+// Position arrows next to the avatar image
+function posArrow() {
+    $('.js-slick-test').each(function () {
+        var x = $(this).find('.client-avatar img').offset().top - $(this).offset().top;
+        $(this).find('.arrow').css('top', x);
     });
+}
+
+// Run once on load
+posArrow();
+$('.js-slick-test').slick('setPosition'); // Refresh Slick layout on load
+
+// Debounce resize event for performance and accuracy
+let resizeTimeout;
+$(window).on('resize', function () {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(function () {
+        posArrow(); // Reposition arrows
+        $('.js-slick-test').slick('setPosition'); // Realign carousel
+    }, 200); // Delay in ms (tweak if needed)
+});
 
     // Config Intro
     var introSelector = $('.js-intro');
