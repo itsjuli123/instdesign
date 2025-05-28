@@ -365,27 +365,40 @@ modalAPImodal.on('hide.bs.modal', function () {
 
     // Config Slick Arrow Testimonials
 
-// Position arrows next to the avatar image
 function posArrow() {
-    $('.js-slick-test').each(function () {
-        var x = $(this).find('.client-avatar img').offset().top - $(this).offset().top;
-        $(this).find('.arrow').css('top', x);
-    });
+  $('.js-slick-test').each(function () {
+    var $slider = $(this);
+    var $avatar = $slider.find('.client-avatar img');
+    var $arrows = $slider.find('.arrow');
+
+    // Only run if avatar exists and is visible
+    if ($avatar.length && $avatar.is(':visible')) {
+      var x = $avatar.offset().top - $slider.offset().top;
+      $arrows.css('top', x);
+    }
+  });
 }
 
-// Run once on load
-posArrow();
-$('.js-slick-test').slick('setPosition'); // Refresh Slick layout on load
+// Run after page load
+$(window).on('load', function () {
+  posArrow();
+  $('.js-slick-test').slick('setPosition');
+});
 
-// Debounce resize event for performance and accuracy
+// Hook into Slick's lifecycle event
+$('.js-slick-test').on('setPosition', function () {
+  posArrow();
+});
+
+// Debounced resize handler
 let resizeTimeout;
 $(window).on('resize', function () {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(function () {
-        posArrow(); // Reposition arrows
-        $('.js-slick-test').slick('setPosition'); // Realign carousel
-    }, 200); // Delay in ms (tweak if needed)
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(function () {
+    $('.js-slick-test').slick('setPosition'); // triggers setPosition event, which calls posArrow
+  }, 200);
 });
+
 
     // Config Intro
     var introSelector = $('.js-intro');
