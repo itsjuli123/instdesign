@@ -3884,7 +3884,7 @@ ul.list-reset {
   width: 830px;
   margin: 0 auto;
   padding-top: 40px;
-  position: relative; /* ensures arrows position relative to this */
+  position: relative; /* Required for absolutely positioned arrows */
 }
 
 .section-testimonials .section-content .arrow {
@@ -3893,50 +3893,77 @@ ul.list-reset {
   transform: translateY(-50%);
   z-index: 10;
   font-size: 30px;
-  color: #333333; /* ensures arrow icon is black */
+  color: #333333;
   cursor: pointer;
   background: transparent;
   border: none;
-  box-shadow: none;
   padding: 0;
 }
 
-
-/* Position arrows just outside the testimonial box on desktop */
+/* Position arrows at increasing distances from center as screen widens */
 .section-testimonials .section-content .arrow-prev {
-  left: -50px;
+  left: 230px;
 }
 
 .section-testimonials .section-content .arrow-next {
-  right: -50px;
+  right: 230px;
 }
 
-/* Tablet adjustments */
+/* Add padding to prevent text overlap */
+.section-testimonials .client-text {
+  padding: 0 60px; /* Adjust to balance against arrows */
+}
+
+/* Responsive adjustments */
 @media (max-width: 991px) {
   .section-testimonials .section-content {
     width: 100%;
-    padding: 40px 20px;
   }
+
   .section-testimonials .section-content .arrow-prev {
-    left: -30px;
+    left: 180px;
   }
+
   .section-testimonials .section-content .arrow-next {
-    right: -30px;
+    right: 180px;
+  }
+
+  .section-testimonials .client-text {
+    padding: 0 50px;
   }
 }
 
-/* Mobile: move arrows below the content, side by side and centered */
 @media (max-width: 767px) {
-  .section-testimonials .section-content .arrow {
-    position: static;
-    transform: none;
-    margin: 10px;
-    display: inline-block;
+  .section-testimonials .section-content .arrow-prev {
+    left: 100px;
   }
 
-  .section-testimonials .section-content {
-    text-align: center;
+  .section-testimonials .section-content .arrow-next {
+    right: 100px;
   }
+
+  .section-testimonials .client-text {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-testimonials .section-content .arrow-prev {
+    left: 30px;
+  }
+
+  .section-testimonials .section-content .arrow-next {
+    right: 30px;
+  }
+
+  .section-testimonials .client-text {
+    padding: 0 20px;
+  }
+
+  /* Optional: hide arrows completely if layout is too tight */
+  /* .section-testimonials .section-content .arrow {
+    display: none;
+  } */
 }
 
 
