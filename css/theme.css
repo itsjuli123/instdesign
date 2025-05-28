@@ -3965,6 +3965,12 @@ ul.list-reset {
     display: none;
   } */
 }
+.section-testimonials .client-text p::before {
+  content: "“";
+}
+.section-testimonials .client-text p::after {
+  content: "”";
+}
 
 
 /*
